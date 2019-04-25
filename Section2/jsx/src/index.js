@@ -2,13 +2,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+function getButton() {
+    return 'Click me from function!'
+}
+
 // Create a react component
 const App = () => {
+    // const buttonText = 'Click Me'; //You can use this
+
     return (
     <div>
         <label className="label" for="name">Enter Name:</label>
         <input id="name" text="text"/>
-        <button style={{ backgroundColor: 'blue', color: 'white' }}>Submit</button>
+        <button style={{ backgroundColor: 'blue', color: 'white' }}>{getButton()}</button>
     </div>)
 };
 
