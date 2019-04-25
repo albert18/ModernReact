@@ -1,8 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import faker from 'faker';
 
-const CommentDetail = (props ) => {
+const CommentDetail = (props) => {
     console.log(props);
     return (
         <div className="comment">
