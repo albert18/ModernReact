@@ -17,8 +17,6 @@ const App = () => {
         <CommentDetail postImage={faker.image.avatar()} author="Jane" timeAgo="Today at 10:00PM" textPost="Love it!"/>
         </ApprovalCard>
         
-        
-
         </div>
     );
 }
