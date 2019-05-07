@@ -11,9 +11,13 @@ const getSeason = (lat, month) => {
 
 const SeasonDisplay = (props) => {
     const season = getSeason(props.lat, new Date().getMonth())
+    const text = season === 'Winter' ? 'Cold' : 'Hot'
 
-    console.log(season);
-    return <div>Latitude : { props.lat }</div>
+    return (
+        <div>
+        <h1>{text}</h1>
+    </div>
+    )
 }
 
 export default SeasonDisplay;
