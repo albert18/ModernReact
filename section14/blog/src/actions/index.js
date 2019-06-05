@@ -2,10 +2,12 @@ import _ from 'lodash';
 import jsonPlaceHolder from '../apis/jsonPlaceHolder';
 import { async } from 'q';
 
-export const fetchPostsAndUsers = () => async dispatch => {
-    console.log('feadadadsasa before');
+export const fetchPostsAndUsers = () => async (dispatch, getState) => {
     await dispatch(fetchPosts());
-    console.log('feadadadsasa post');
+    // console.log(getState().posts);
+
+    const userIds = _.uniq(_.map(getState().posts, 'userId'));
+    userIds.forEach(id => dispatch(fetchUser(id)));
 };
 
 export const fetchPosts = () => async dispatch => {        
