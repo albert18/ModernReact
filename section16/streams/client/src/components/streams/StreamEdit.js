@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const StreamEdit = props => {
-    // console.log(props);
+    console.log(props);
     return <div>StreamEdit</div>
 };
 
