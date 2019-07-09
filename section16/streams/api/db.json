@@ -19,6 +19,12 @@
       "title": "Me streaming",
       "description": "Watch Me again and again!",
       "id": 4
+    },
+    {
+      "title": "My test",
+      "description": "{stream.title}",
+      "userId": "104620828721475479439",
+      "id": 5
     }
   ]
 }
