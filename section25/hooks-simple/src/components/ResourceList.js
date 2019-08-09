@@ -8,14 +8,15 @@ const ResourceList = ({ resource }) => {
 
     const fetchResource = async () => {
         const response = await axios.get(
-            `https://jsonplaceholder.typicode.com/${resource}`)
+            `https://jsonplaceholder.typicode.com/${resource}`
+            );
 
             setResources(response.data);
     }
 
     useEffect(() => {
         fetchResource(resource)
-    }, []);
+    }, [resource]);
 
     return (
         <div>{resources.length}</div>
